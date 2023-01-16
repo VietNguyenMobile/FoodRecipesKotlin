@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav">
+    <fragment
+        android:id="@+id/recipesFragment"
+        android:name="com.example.foodrecipeskotlin.ui.fragments.recipes.RecipesFragment"
+
+        android:label="Recipes"
+        tools:layout="@layout/fragment_recipes">
+        <action android:id="@+id/action_recipesFragment_to_recipesBottomSheet"
+
+            />
+        <argument
+            android:name="backFromBottomSheet"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <action android:id="@+id/action_recipesFragment_to_detailsActivity" />
+    </fragment>
+</navigation>
